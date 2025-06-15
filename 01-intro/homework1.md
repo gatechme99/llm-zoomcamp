@@ -164,4 +164,4 @@ encoding.decode_single_token_bytes(63842)
 
 ## A6. Tokens
 
-The prompt has `320` tokens`.
+The prompt has `320` tokens.
