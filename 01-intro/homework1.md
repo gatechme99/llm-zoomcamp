@@ -2,15 +2,12 @@
 
 ## Q1. Running Elastic 
 
-Run Elastic Search 8.17.6, and get the cluster information. If you run it on localhost, this is how you do it:
-
-```bash
-curl localhost:9200
-```
-
+Run Elastic Search 8.17.6, and get the cluster information. 
 What's the `version.build_hash` value?
 
 ## A1. Running Elastic 
+
+The `version.build_hash` value is `dbcbbbd0bc4924cfeb28929dc05d82d662c527b7`.
 
 
 ## Getting the data
@@ -34,11 +31,6 @@ for course in documents_raw:
         documents.append(doc)
 ```
 
-Note that you need to have the `requests` library:
-
-```bash
-pip install requests
-```
 
 ## Q2. Indexing the data
 
@@ -59,6 +51,7 @@ Which function do you use for adding your data to elastic?
 
 ## A2. Indexing the data
 
+You use the `index` function for adding your data to elastic.
 
 ## Q3. Searching
 
@@ -79,6 +72,8 @@ Look at the `_score` field.
 
 ## A3. Searching
 
+The score for the top ranking result is `44.50`.
+
 
 ## Q4. Filtering
 
@@ -94,6 +89,8 @@ Return 3 results. What's the 3rd question returned by the search engine?
 * How can I annotate a graph?
 
 ## A4. Filtering
+
+The 3rd question returned by the search engine is `How do I copy files from a different folder into docker container’s working directory?`
 
 
 ## Q5. Building a prompt
@@ -132,6 +129,8 @@ What's the length of the resulting prompt? (use the `len` function)
 
 ## A5. Building a prompt
 
+The length of the resulting prompt is `1446`.
+
 
 ## Q6. Tokens
 
@@ -165,3 +164,4 @@ encoding.decode_single_token_bytes(63842)
 
 ## A6. Tokens
 
+The prompt has `320` tokens`.
